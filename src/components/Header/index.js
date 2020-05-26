@@ -24,13 +24,15 @@ const Header = ({
   return (
     <div className="header">
       <img src="https://i.imgur.com/KyG7CYJ.jpg" alt="Space X" className="header-image" />
-      <h1 className="header-title">{name}</h1>
-      <p className="header-ceo">The CEO is <strong>{ceo}</strong></p>
-      <div className="header-summary">
-        <p className="header-summary-question">What is Space X ?</p>
-        <p className="header-summary-text">{summary} this business is established the company valuation at approximately US$ {numberAbbreviation(Number(valuation))}.</p>
+      <div className="header-container-right">
+        <h1 className="header-title">{name}</h1>
+        <p className="header-ceo">The CEO is <strong>{ceo}</strong></p>
+        <div className="header-summary">
+          <p className="header-summary-question">What is Space X ?</p>
+          <p className="header-summary-text">{summary} this business is established the company valuation at approximately US$ {numberAbbreviation(Number(valuation))}.</p>
+        </div>
+        <button type="button" className="header-button"><a href={website} className="header-button-link">Site officiel</a></button>
       </div>
-      <button type="button" className="header-button"><a href={website} className="header-button-link">Site officiel</a></button>
     </div>
   );
 };

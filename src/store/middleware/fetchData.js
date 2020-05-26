@@ -11,9 +11,7 @@ const fetchData = (store) => (next) => (action) => {
     case FETCH_INFO_COMPANY: {
       axios.get(`${urlApi}/info`)
         .then((res) => {
-          const infoData = res.data;
           store.dispatch(showInfoCompany(res.data, res.data.links));
-          console.log(infoData);
         })
         .catch();
     }
