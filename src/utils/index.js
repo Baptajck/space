@@ -12,7 +12,7 @@ const numberAbbreviation = (n) => {
   return false;
 };
 /**
- * Format date french
+ * Format date numeric
  * @param  {Srting} reviewDate
  */
 export const formatDateFR = (reviewDate) => {

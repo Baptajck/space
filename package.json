@@ -1,5 +1,5 @@
 {
-  "name": "spacex",
+  "name": "space",
   "homepage": "https://github.com/Baptajck/space",
   "devDependencies": {
     "@babel/core": "*",
@@ -38,7 +38,7 @@
     "uglifyjs-webpack-plugin": "*",
     "webpack": "*",
     "webpack-cli": "*",
-    "webpack-dev-server": "*"
+    "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
     "test": "mocha --require tests/.setup.js tests/**/*.test.js",
@@ -60,8 +60,10 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-icons": "^3.10.0",
     "react-redux": "^7.1.0",
     "react-router-dom": "^5.2.0",
+    "react-youtube": "^7.11.2",
     "redux": "^4.0.1"
   }
 }

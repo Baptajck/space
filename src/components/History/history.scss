@@ -7,9 +7,12 @@
 .history {
   text-align: center;
   margin: 0 auto 1rem;
+  background-color: rgba(22, 22, 22, .9);
+  padding: 2rem 0;
 
   &-title {
     font-size: 1.5em;
+    color: rgb(255, 255, 255);
   }
 
   &-cards {
@@ -18,7 +21,7 @@
     margin: 2rem auto;
     border-radius: 10px;
     background-color: rgb(238, 238, 238);
-    @include boxShadowOutset(0,0,0,.7);
+    @include boxShadowOutset(145,145,255,.78);
 
     &-container--infos {
       display: flex;
@@ -54,6 +57,15 @@
         @include button;
         font-size: 13px;
         margin: 1rem 0;
+        position: relative;
+        text-transform: uppercase;
+
+        & sup {
+          position: absolute;
+          font-size: 12px;
+          top: 1px;
+          right: 3px;
+        }
       }
     }
   }
@@ -82,7 +94,7 @@
 }
 
 /*-------------------------------------------*\
-  Container History - Size tablet
+  Container History - Size Desktop
 \*-------------------------------------------*/
 @media only screen and (min-width: 1024px) {
   .history {

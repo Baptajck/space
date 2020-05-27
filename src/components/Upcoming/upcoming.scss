@@ -1,0 +1,101 @@
+@import 'src/styles/mixin';
+@import 'src/styles/vars';
+
+/*-------------------------------------------*\
+  Container Header - Size Mobile
+\*-------------------------------------------*/
+.upcoming {
+  // background-color: rgba(22, 22, 22, .9);
+  // color: rgb(255, 255, 255);
+  text-align: center;
+
+  & > h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 2rem 0;
+  }
+
+  &-youtube {
+    width: 80vw;
+  }
+
+  &-title {
+    font-size: 1.5em;
+    padding: 1rem;
+  }
+
+  &-container {
+    @include wrap;
+  }
+
+  &-details {
+    padding: 1rem;
+    margin-top: auto;
+    line-height: 2rem;
+
+    &--youtube {
+      display: flex;
+      justify-content: center;
+    }
+
+    &--next {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    & span {
+      font-weight: 600;
+    }
+
+    &-image {
+      width: 102.4px;
+      height: 102.4px;
+    }
+
+    &-name {
+
+    }
+
+    &-date {
+
+    }
+
+    &-rocket {
+
+      &-name {
+
+      }
+
+      &-launch-site {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+
+    &-update {
+      font-size: 12px;
+      font-style: italic;
+      color: gray;
+    } 
+
+    &-hr {
+      width: 50%;
+      margin: 2rem auto;
+
+      &:last-child() {
+        display: none;
+      }
+    }
+  }
+}
+
+/*-------------------------------------------*\
+  Container Upcoming - Size tablet
+\*-------------------------------------------*/
+@media only screen and (min-width: 1024px) {
+  .upcoming {
+    &-youtube {
+      width: 65%
+    }
+  }
+}

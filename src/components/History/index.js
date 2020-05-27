@@ -1,6 +1,7 @@
 /* eslint-disable camelcase */
 /* eslint-disable react/prop-types */
 import React, { useEffect } from 'react';
+import { FiExternalLink } from 'react-icons/fi';
 
 import './history.scss';
 
@@ -16,7 +17,7 @@ const Header = ({
 
   return (
     <div className="history">
-      <h2 className="history-title">HISTORY</h2>
+      <h2 className="history-title">Last Historical Events</h2>
       <div className="history-container">
         {history.slice(0, 6)
           .map(({
@@ -30,8 +31,7 @@ const Header = ({
               </div>
               <p className="history-cards-details">{truncStr(details, 250)}</p>
               <div className="history-cards-links">
-                <a href={article} className="history-cards-links-item">article</a>
-                <a href={wikipedia} className="history-cards-links-item">wikipedia</a>
+                <a href={article} rel="noreferrer" target="_blank" className="history-cards-links-item">Read More <sup><FiExternalLink /></sup></a>
               </div>
             </div>
           ))}
