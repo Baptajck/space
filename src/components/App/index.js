@@ -5,6 +5,7 @@ import { Route, Switch, useLocation } from 'react-router-dom';
 // == Import : local
 import './app.scss';
 import Header from 'src/containers/headerContainer';
+import History from 'src/containers/historyContainer';
 
 // == Composant
 const App = () => {
@@ -26,8 +27,9 @@ const App = () => {
   return (
     <div id="app">
       <Switch>
-        <Route path="/">
+        <Route exact path="/">
           <Header />
+          <History />
         </Route>
       </Switch>
     </div>

@@ -1,6 +1,6 @@
 {
   "name": "spacex",
-  "homepage": "https://github.com/Baptajck/SpaceX",
+  "homepage": "https://github.com/Baptajck/space",
   "devDependencies": {
     "@babel/core": "*",
     "@babel/plugin-proposal-class-properties": "*",
@@ -34,6 +34,7 @@
     "style-loader": "*",
     "stylelint": "*",
     "stylelint-config-recommended": "*",
+    "stylelint-scss": "^3.17.2",
     "uglifyjs-webpack-plugin": "*",
     "webpack": "*",
     "webpack-cli": "*",

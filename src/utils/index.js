@@ -11,5 +11,26 @@ const numberAbbreviation = (n) => {
   if (n >= 1e15 && n < 1e18) return `${+(n / 1e15).toFixed(1)}Quadrillion`;
   return false;
 };
+/**
+ * Format date french
+ * @param  {Srting} reviewDate
+ */
+export const formatDateFR = (reviewDate) => {
+  const options = {
+    day: 'numeric', month: 'long', year: 'numeric',
+  };
+  const timestamp = Date.parse(reviewDate);
+  const timestampToDate = new Date(timestamp);
+  const reviewDateFormated = timestampToDate.toLocaleDateString('en-EN', options);
+  return reviewDateFormated;
+};
+
+// permet de mettre "..." après un nombre préçis de caractères
+export const truncStr = (string, limit) => (string.length > limit
+  ? `${string
+    .trim()
+    .substring(0, limit - 3)
+    .trim()}...`
+  : string);
 
 export default numberAbbreviation;

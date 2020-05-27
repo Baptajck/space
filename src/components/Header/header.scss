@@ -33,11 +33,13 @@
   }
 
   &-button {
+    margin-top: .5rem;
     padding: .7rem;
     background-color: rgb(0, 0, 163);
     color: rgb(255, 255, 255);
     border: none;
-    border-radius: 20px;
+    font-size: 18px;
+    border-radius: 17px;
   }
 }
 
@@ -47,6 +49,13 @@
 @media only screen and (min-width: 768px) {
   .header {
     font-size: 20px;
+    height: 100%;
+
+    &-image {
+      width: 55%;
+      display: block;
+      margin: 1rem auto;
+    }
 
     &-summary-text {
       line-height: 1.9rem;

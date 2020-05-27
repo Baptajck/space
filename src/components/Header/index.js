@@ -31,7 +31,7 @@ const Header = ({
           <p className="header-summary-question">What is Space X ?</p>
           <p className="header-summary-text">{summary} this business is established the company valuation at approximately US$ {numberAbbreviation(Number(valuation))}.</p>
         </div>
-        <button type="button" className="header-button"><a href={website} className="header-button-link">Site officiel</a></button>
+        <button type="button" className="header-button"><a href={website} className="header-button-link">Official website</a></button>
       </div>
     </div>
   );

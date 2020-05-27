@@ -11,7 +11,7 @@ import store from 'src/store';
 // == Render
 const rootComponent = (
   <Provider store={store}>
-    <Router basename="/SpaceX">
+    <Router basename="/space">
       <App />
     </Router>
   </Provider>
