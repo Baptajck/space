@@ -1,5 +1,4 @@
-@import 'src/styles/mixin';
-@import 'src/styles/vars';
+@import 'src/styles/index';
 
 /*-------------------------------------------*\
   Container Header - Size Mobile
@@ -7,7 +6,8 @@
 .history {
   text-align: center;
   margin: 0 auto 1rem;
-  background-color: rgba(22, 22, 22, .9);
+  background-color: rgb(0, 0, 0);
+  // background-color: rgba(22, 22, 22, .9);
   padding: 2rem 0;
 
   &-title {
@@ -48,6 +48,7 @@
     &-details {
       text-align: justify;
       line-height: 1.3rem;
+      margin-bottom: auto;
     }
     &-links {
       display: flex;

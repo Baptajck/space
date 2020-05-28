@@ -7,6 +7,9 @@ import './app.scss';
 import Header from 'src/containers/headerContainer';
 import History from 'src/containers/historyContainer';
 import Upcoming from 'src/containers/upcomingContainer';
+import Dragons from 'src/containers/dragonsContainer';
+
+import { scrollingAppearance } from 'src/utils';
 
 // == Composant
 const App = () => {
@@ -24,6 +27,7 @@ const App = () => {
   useEffect(() => {
     changeTitle();
   });
+  scrollingAppearance();
 
   return (
     <div id="app">
@@ -32,6 +36,7 @@ const App = () => {
           <Header />
           <History />
           <Upcoming />
+          <Dragons />
         </Route>
       </Switch>
     </div>

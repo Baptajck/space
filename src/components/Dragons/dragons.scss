@@ -1,0 +1,119 @@
+@import 'src/styles/index';
+
+/*-------------------------------------------*\
+  Container Dragons - Size Mobile
+\*-------------------------------------------*/
+.dragons {
+  // background-color: rgba(22, 22, 22, .9);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-bottom: 2rem;
+
+  &--hr {
+    width: 75%;
+  }
+
+  &-container {
+    &-container {
+      margin: 1rem;
+      line-height: 2rem;
+      // border: 1px solid white;
+      padding: 2rem 1rem;
+    }
+
+    &-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      letter-spacing: 0.2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    &-desc {
+      text-align: justify;
+      margin: 2rem 0;
+    }
+  }
+
+  &-table {
+    .dragons-table-tg {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+    }
+
+    & td:first-child {
+      text-align: left;
+      width: 25%;
+      text-transform: uppercase;
+    }
+
+    .dragons-table-tg td {
+      word-break: normal;
+      font-size: 12px;
+      border-bottom: 1px solid rgba(255,255,255,.3);
+      line-height: 1rem;
+      padding: 1rem 0;
+    }
+
+    .dragons-table-tg th {
+      word-break: normal;
+    }
+    .dragons-table-tg .dragons-table-tg-0lax{
+      width: 50%;
+      text-align: right;
+      line-height: 1rem;
+      & > span {
+        color: #868686;
+      }
+    }
+    .dragons-table-tg .dragons-table-tg-1lax{
+      text-align: center;
+      font-size: 1.6em;
+      padding-bottom: 2rem;
+      font-weight: 900;
+    }
+  }
+}
+
+/*-------------------------------------------*\
+  Container Dragons - Size Tablet
+\*-------------------------------------------*/
+@media only screen and (min-width: 768px) {
+  .dragons {
+    &--hr {
+      width: 50%;
+    }
+    &-container {
+      &-desc {
+        width: 70%;
+        margin: 2rem auto;
+      }
+    }
+    .dragons-table .dragons-table-tg {
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
+}
+
+/*-------------------------------------------*\
+  Container Dragons - Size Desktop
+\*-------------------------------------------*/
+@media only screen and (min-width: 768px) {
+  .dragons {
+    &--hr {
+      width: 30%;
+    }
+    &-container {
+      &-desc {
+        width: 50%;
+        margin: 2rem auto;
+      }
+    }
+    .dragons-table .dragons-table-tg {
+      width: 50%;
+    }
+  }
+}

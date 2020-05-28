@@ -4,7 +4,10 @@ import axios from 'axios';
 
 import { FETCH_INFO_COMPANY, showInfoCompany } from 'src/store/reducers/infoReducer';
 import { FETCH_HISTORY, showHistory } from 'src/store/reducers/history';
-import { FETCH_UPCOMING, showUpcoming, FETCH_UPCOMING_NEXT_TRY, showUpcomingNextTry } from 'src/store/reducers/upcoming';
+import {
+  FETCH_UPCOMING, showUpcoming, FETCH_UPCOMING_NEXT_TRY, showUpcomingNextTry,
+} from 'src/store/reducers/upcoming';
+import { FETCH_DRAGONS, showDragons } from 'src/store/reducers/dragons';
 
 const urlApi = 'https://api.spacexdata.com/v3';
 
@@ -51,6 +54,17 @@ const fetchData = (store) => (next) => (action) => {
       axios.get(`${urlApi}/launches/next`)
         .then((res) => {
           store.dispatch(showUpcomingNextTry(res.data, res.data.links));
+        })
+        .catch();
+    }
+      break;
+    /**
+     * Recovery of the next Space x mission
+     */
+    case FETCH_DRAGONS: {
+      axios.get(`${urlApi}/dragons`)
+        .then((res) => {
+          store.dispatch(showDragons(res.data));
         })
         .catch();
     }

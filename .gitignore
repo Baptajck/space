@@ -6,4 +6,12 @@ dist/
 .DS_Store
 Thumbs.db
 
+.babelrc
+.editorconfig
+.eslintignore
+.eslintrc
+.stylelintignore
+.stylelintrc
+updateDeps.js
+
 yarn-error.log

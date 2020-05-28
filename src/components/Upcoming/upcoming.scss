@@ -1,8 +1,7 @@
-@import 'src/styles/mixin';
-@import 'src/styles/vars';
+@import 'src/styles/index';
 
 /*-------------------------------------------*\
-  Container Header - Size Mobile
+  Container Upcoming - Size Mobile
 \*-------------------------------------------*/
 .upcoming {
   // background-color: rgba(22, 22, 22, .9);
@@ -45,6 +44,10 @@
 
     & span {
       font-weight: 600;
+    }
+
+    &--details {
+      text-align: justify;
     }
 
     &-image {
@@ -90,7 +93,7 @@
 }
 
 /*-------------------------------------------*\
-  Container Upcoming - Size tablet
+  Container Upcoming - Size Desktop
 \*-------------------------------------------*/
 @media only screen and (min-width: 1024px) {
   .upcoming {
