@@ -3,13 +3,10 @@
 /* eslint-disable camelcase */
 /* eslint-disable react/prop-types */
 import React, { useEffect } from 'react';
-import YouTube from 'react-youtube';
-
+import Youtube from 'react-youtube';
+import { formatDateFR } from 'src/utils';
 import './upcoming.scss';
 
-import { formatDateFR } from 'src/utils';
-
-/* Option for youtube */
 const optsMobile = {
   height: '183',
   width: '300',
@@ -40,9 +37,8 @@ const Header = ({
 
   return (
     <div className="upcoming">
-      <h1 className="upcoming-title">Upcoming</h1>
+      <h1 className="upcoming-title">next mission</h1>
 
-      <h2>Next Mission</h2>
       <div className="upcoming-details upcoming-details--next reveal">
         <img srcSet={`${upcomingNextTryLinks.mission_patch} 1024w, ${upcomingNextTryLinks.mission_patch_small} 256w`} src={upcomingNextTryLinks.mission_patch} alt="icone" className="upcoming-details-image reveal-1" />
         <div className="reveal-3">
@@ -54,16 +50,15 @@ const Header = ({
         </div>
         <h3>Youtube</h3>
         <div className="upcoming-details--youtube reveal-4">
-          <YouTube
+          <Youtube
             videoId={upcomingNextTryLinks.youtube_id}
-            // className="upcoming-youtube"
             opts={document.body.clientWidth < 1023 ? optsMobile : optsDesktop}
           />
         </div>
         <hr className="upcoming-details-hr" />
       </div>
 
-      <h2>Upcoming</h2>
+      <h1 className="upcoming-title">Upcoming</h1>
       <div className="upcoming-container reveal">
         {upcoming.slice(1, 5)
           .map(({

@@ -31,7 +31,7 @@ const Header = ({
               </div>
               <p className="history-cards-details reveal-3">{truncStr(details, 250)}</p>
               <div className="history-cards-links">
-                <a href={article} rel="noreferrer" target="_blank" className="history-cards-links-item reveal-4">Read More <sup><FiExternalLink /></sup></a>
+                <a href={article} rel="noreferrer" target="_blank" className="history-cards-links-item reveal-4">Article <sup><FiExternalLink /></sup></a>
               </div>
             </div>
           ))}

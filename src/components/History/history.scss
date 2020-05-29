@@ -13,6 +13,7 @@
   &-title {
     font-size: 1.5em;
     color: rgb(255, 255, 255);
+    text-transform: uppercase;
   }
 
   &-cards {
@@ -79,7 +80,7 @@
   .history {
     &-title {
       font-size: 2em;
-      margin-top: 5%;
+      margin: 2rem 0;
     }
     &-container {
       @include wrap;

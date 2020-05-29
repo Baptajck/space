@@ -8,6 +8,7 @@ import Header from 'src/containers/headerContainer';
 import History from 'src/containers/historyContainer';
 import Upcoming from 'src/containers/upcomingContainer';
 import Dragons from 'src/containers/dragonsContainer';
+import Roadster from 'src/containers/roadsterContainer';
 
 import { scrollingAppearance } from 'src/utils';
 
@@ -37,6 +38,7 @@ const App = () => {
           <History />
           <Upcoming />
           <Dragons />
+          <Roadster />
         </Route>
       </Switch>
     </div>

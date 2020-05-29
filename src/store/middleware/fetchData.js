@@ -8,6 +8,7 @@ import {
   FETCH_UPCOMING, showUpcoming, FETCH_UPCOMING_NEXT_TRY, showUpcomingNextTry,
 } from 'src/store/reducers/upcoming';
 import { FETCH_DRAGONS, showDragons } from 'src/store/reducers/dragons';
+import { FETCH_ROADSTER, showRoadster } from 'src/store/reducers/roadster';
 
 const urlApi = 'https://api.spacexdata.com/v3';
 
@@ -65,6 +66,17 @@ const fetchData = (store) => (next) => (action) => {
       axios.get(`${urlApi}/dragons`)
         .then((res) => {
           store.dispatch(showDragons(res.data));
+        })
+        .catch();
+    }
+      break;
+    /**
+     * Recovery of the Roadster mission
+     */
+    case FETCH_ROADSTER: {
+      axios.get(`${urlApi}/roadster`)
+        .then((res) => {
+          store.dispatch(showRoadster(res.data));
         })
         .catch();
     }

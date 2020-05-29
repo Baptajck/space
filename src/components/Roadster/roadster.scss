@@ -1,0 +1,50 @@
+@import 'src/styles/index';
+
+/*-------------------------------------------*\
+  Container Roadster - Size Mobile
+\*-------------------------------------------*/
+.roadster {
+  text-align: center;
+  padding-bottom: 2rem;
+
+  &-title {
+    font-size: 2em;
+    margin: 2rem auto;
+    text-transform: uppercase;
+  }
+
+  &-img {
+    width: 90%;
+    display: block;
+    margin: 1rem;
+  }
+
+  &-desc {
+    text-align: justify;
+    line-height: 1.3rem;
+    width: 85%;
+    margin: 1.3rem auto;
+  }
+
+  &-link {
+    display: block;
+    margin: 1rem auto;
+    width: 50%;
+    @include button;
+    font-size: 13px;
+    position: relative;
+    text-transform: uppercase;
+    
+    & sup {
+      position: absolute;
+      font-size: 12px;
+      top: 1px;
+      right: 3px;
+    }
+  }
+}
+
+/*-------------------------------------------*\
+  Container Roadster - Size Desktop
+\*-------------------------------------------*/
+// @media only screen and (min-width: 1024px) {}
