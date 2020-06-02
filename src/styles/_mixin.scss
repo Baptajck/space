@@ -6,9 +6,16 @@
 
 @mixin button {
   background-color: transparent;
-  border: 2px solid #0000a3;
+  border: 2px solid rgb(0, 0, 163);
   padding: .7rem 2rem;
-  color: #0000a3;
+  color: rgb(0, 0, 163);
+  transition: .3s;
+
+  &:hover {
+    transition: .3s;
+    background-color: rgba(0, 0, 163, .7);
+    color: rgb(255, 255, 255);
+  }
 }
 
 @mixin wrap {

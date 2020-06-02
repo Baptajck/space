@@ -1,0 +1,135 @@
+@import 'src/styles/index';
+
+/*-------------------------------------------*\
+  Container Roadster - Size Mobile
+\*-------------------------------------------*/
+.footer {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  padding: 2rem 2rem 5rem;
+  text-align: center;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+
+    &-about-link {
+      color: rgb(56, 99, 218);
+    }
+
+    &-title {
+      font-size: 2em;
+      margin: 1.5rem 0 .5rem;
+    }
+
+    &-groupLink {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+
+        &--a {
+          line-height: 2rem;
+          & > svg {
+            width: 35px;
+            height: 35px;
+          }
+
+          & > span {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &--div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    &-desc {
+      line-height: 1.5rem;
+      text-align: justify;
+      margin: 1rem 0 2rem;
+    }
+
+  }
+}
+
+/*-------------------------------------------*\
+  Container Footer - Size Tablet
+\*-------------------------------------------*/
+@media only screen and (min-width: 768px) {
+  .footer {
+    &-container {
+
+      &--div {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      &-groupLink-item--a {
+        & > svg {
+          width: 40px;
+          height: 40px;
+        }
+  
+        & > span {
+          display: block;
+        }
+        
+        &:hover {
+          color: rgb(56, 99, 218);
+        }
+      }
+    }
+  }
+}
+
+
+
+/*-------------------------------------------*\
+  Container Footer - Size Desktop
+\*-------------------------------------------*/
+@media only screen and (min-width: 1024px) {
+  .footer {
+    &-container {
+      width: 60%;
+      justify-content: space-between;
+      padding: 1.5rem;
+
+      &-title {
+        text-align: left;
+      }
+
+      &-group {
+        justify-content: space-between;
+        flex-direction: column;
+        display: flex;
+        height: 100%;
+        width: 90%;
+      }
+
+      &-desc--copy {
+        text-align: right;
+      }
+
+      &-border {
+        border-right: 1px solid gray;
+        width: 35%;
+        padding-right: 4rem;
+      }
+
+      &--div {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+}

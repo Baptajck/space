@@ -1,6 +1,6 @@
 // == Import : npm
-import React, { useEffect } from 'react';
-import { Route, Switch, useLocation } from 'react-router-dom';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 
 // == Import : local
 import './app.scss';
@@ -9,36 +9,25 @@ import History from 'src/containers/historyContainer';
 import Upcoming from 'src/containers/upcomingContainer';
 import Dragons from 'src/containers/dragonsContainer';
 import Roadster from 'src/containers/roadsterContainer';
+import Footer from 'src/components/Footer';
 
 import { scrollingAppearance } from 'src/utils';
 
 // == Composant
 const App = () => {
-  const { pathname } = useLocation();
-  const changeTitle = () => {
-    switch (pathname) {
-      case '/':
-        document.title = 'Home | Space';
-        break;
-      default:
-        document.title = 'Space';
-    }
-  };
-
-  useEffect(() => {
-    changeTitle();
-  });
+  document.title = 'Home | Space';
   scrollingAppearance();
 
   return (
     <div id="app">
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/space">
           <Header />
           <History />
           <Upcoming />
           <Dragons />
           <Roadster />
+          <Footer />
         </Route>
       </Switch>
     </div>

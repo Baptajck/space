@@ -13,10 +13,17 @@
     text-transform: uppercase;
   }
 
+  &-name {
+    font-size: 1.3em;
+    margin: 1rem;
+  }
+
   &-img {
     width: 90%;
     display: block;
     margin: 1rem;
+    border-radius: 20px;
+    @include boxShadowOutset(0, 0, 0, .7)
   }
 
   &-desc {
@@ -45,6 +52,43 @@
 }
 
 /*-------------------------------------------*\
+  Container Roadster - Size Tablet
+\*-------------------------------------------*/
+@media only screen and (min-width: 768px) {
+  .roadster {
+    width: 60%;
+    margin: 0 auto;
+
+    // &-img {
+    //   width: 100%;
+    // }
+
+    &-desc {
+      width: 100%;
+    }
+
+    &-link {
+      width: 35%;
+    }
+  }
+}
+
+/*-------------------------------------------*\
   Container Roadster - Size Desktop
 \*-------------------------------------------*/
-// @media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .roadster {
+    &-container-link {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    &-img {
+      display: inline;
+    }
+
+    &-link {
+      width: 20%;
+    }
+  }
+}
