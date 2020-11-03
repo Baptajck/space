@@ -17,7 +17,7 @@
     Parcourez cette page pour découvrir l'univers Space X et tous les petits détails des navettes, des lancements etc...
     <br />
     <br />
-    <a href="https://space.baptjack.fr">Voir le site</a>
+    <a href="http://space.baptjack.fr">Voir le site</a>
   </p>
 </p>
 
