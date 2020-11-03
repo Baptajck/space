@@ -7,7 +7,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://space.baptjack.fr">
+  <a href="http://space.baptjack.fr">
     <img src="https://i.imgur.com/YD0CVyW.png" alt="Logo" width="200" height="100">
   </a>
 
